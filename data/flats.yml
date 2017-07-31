@@ -1,0 +1,22 @@
+# data/flats.yml
+k0p0:
+  name: "k0p0's home"
+  description: "Charming room in Montmartre"
+  city_name: "Paris, France"
+  city_slug: "paris"
+  wifi: true
+  rating: 4
+AugustinJossa:
+  name: "Augustin' home"
+  description: Small flat in Tokyo
+  city_name: "Paris, France"
+  city_slug: "tokyo"
+  wifi: false
+  rating: 3
+papillard:
+  name: Boris's home
+  description: Nice flat in Piccadilly
+  city_name: "London, UK"
+  city_slug: "london"
+  wifi: true
+  rating: 5

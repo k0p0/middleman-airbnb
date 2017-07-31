@@ -1,0 +1,54 @@
+<!-- source/flats/show.html.erb -->
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+<!-- Inject flat data in template -->
+<div class="banner-line" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');"> </div>
+<div class="flats desc">
+  <div class="flats desc">
+    <div>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "avatar-xxl" %>
+      <h4 class="text-center"> <%= flat.name %></h4>
+    </div>
+    <div>
+      <h4><%= flat.description %></h4>
+      <h4><%= flat.city_name %></h4>
+      <p><% flat.rating.to_i.times do |start| %>
+        <i class="flats fa fa-star"></i>
+      <% end %></p>
+      <p> Services :
+        <i class="fa fa-bed"></i>
+        <i class="fa fa-glass"></i>
+        <% if flat.wifi == true %>
+        <i class="fa fa-wifi"></i>
+        <% end %>
+      </p>
+    </div>
+  </div>
+
+     <div class="row">
+      <div class="col-xs-12">
+        <form action="#" >
+        <div class="row">
+          <div class="col-xs-6">
+              <input type="text" id="checkin" placeholder="checkin" class="form-control">
+          </div>
+          <div class="col-xs-6">
+              <input type="text" id="checkout" placeholder="checkout" class="form-control">
+          </div>
+        </div>
+          <input type="email" id="your-email" placeholder="your@email.com" class="form-control">
+        <div class="form-group">
+          <label for="favorite">How many guests ? </label>
+          <select id="favorite" name="language" class="form-control">
+            <option value="ruby">1 guest</option>
+            <option value="ruby">2 guests</option>
+            <option value="css">3 guests </option>
+          </select>
+        </div>
+        <input type="submit" value="Book it" class="btn btn-primary btn-lg btn-block">
+      </form>
+    </div>
+  </div>
+
+</div>
+

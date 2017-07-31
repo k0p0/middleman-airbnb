@@ -1,0 +1,25 @@
+.flats .fa-star {
+  color: orange;
+}
+
+.banner-line {
+  height: 40vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-control
+{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
